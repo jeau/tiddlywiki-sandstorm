@@ -17,11 +17,11 @@ const pkgdef :Spk.PackageDefinition = (
     # This manifest is included in your app package to tell Sandstorm
     # about your app.
 
-    appTitle = (defaultText = "TiddlyWiki App"),
+    appTitle = (defaultText = "TiddlyWiki5 App"),
 
     appVersion = 1,  # Increment this for every release.
 
-    appMarketingVersion = (defaultText = "0.1.0+v1"),
+    appMarketingVersion = (defaultText = "0.2.0+v1"),
     # Human-readable representation of appVersion. Should match the way you
     # identify versions of your app in documentation and marketing.
 
