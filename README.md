@@ -30,7 +30,7 @@ To launch a local [Sandstorm](http://sandstorm.io) instance with [TiddlyWiki5](h
 - Log in with a dev account, choose *Alice (admin)* as the user to sign in with
 - Click the *TiddlyWiki App* icon, then *Create new instance* to spin up a new TiddlyWiki instance.
 
-Packaging:
+### Packaging
 
 To create a Sandstorm package (SPK) file, containing the app and all its dependencies. 
 
@@ -39,7 +39,7 @@ To create a Sandstorm package (SPK) file, containing the app and all its depende
 
 You can upload this spk file inside your own Sandtorm server to test it.
 
-Issues:
+### Issues
 
 - The TW markups are not inserted in the editing area when I click on edit buttons whith Firefox (48.01, OSX), but it's working fine with Chrome (OSX).
 - Because of the Sandstorm security policy, it is not possible to load plugins and themes from the interface TW5 of administration (it works still in Dev mode). You have to download them manually with *import* tool.
