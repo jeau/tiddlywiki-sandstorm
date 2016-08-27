@@ -7,7 +7,6 @@ Rapid and basic implementation of [TiddlyWiki5](http://tiddlywiki.com/) as a [Sa
 [TiddlyWiki5](http://tiddlywiki.com/) is a complete interactive wiki in JavaScript. Natively, it can be used as a single HTML file in the browser or as a powerful Node.js application. It is highly customisable: the entire user interface is itself implemented in hackable WikiText. 
 
 [Sandstorm](http://sandstorm.io) is an open source platform for personal servers. [Sandstorm](http://sandstorm.io) lets you run your own server and easely install apps like [Roundcube](https://roundcube.net/), [Wekan](https://wekan.io/), [EtherCalc](https://ethercalc.org/), [Etherpad](http://etherpad.org/), [GitLab](https://about.gitlab.com/), and more. It handles login & access control, and can run any web app that runs on Linux, though some apps may need changes to work within the Sandstorm sandbox.
-4. When you are told the app is running, access http://local.sandstorm.io:6080. Log in with a dev account, then click the button to spin up a new TiddlyWiki instance.
 
 The goal of this work i to used it as an instance on the [Sandstorm](https://sandstorm.io) app platform. 
 
@@ -20,23 +19,23 @@ Documentation :
 
 To launch a local [Sandstorm](http://sandstorm.io) instance with [TiddlyWiki5](http://tiddlywiki.com/) pre-installed, do the following.
 
-1. Install [Vagrant](https://www.vagrantup.com/downloads.html).
-2. Install [VirtualBox ](https://www.virtualbox.org/wiki/Downloads).
-3. Install [Vagrant-SPK](https://github.com/sandstorm-io/vagrant-spk).
-4. Clone this repo and from the top-level directory, run:
-- `vagrant-spk vm up` to start a virtual Linux machine containing Sandstorm
-- `vagrant-spk dev` to make the app available in the Sandstorm, in development mode
-5. Your system is running a Sandstorm instance. You should visit it in your web browser now by opening this link.
-- http://local.sandstorm.io:6080
-6. Log in with a dev account, choose *Alice (admin)* as the user to sign in with
-7. Click the *TiddlyWiki App* icon, then *Create new instance* to spin up a new TiddlyWiki instance.
+- Install [Vagrant](https://www.vagrantup.com/downloads.html).
+- Install [VirtualBox ](https://www.virtualbox.org/wiki/Downloads).
+- Install [Vagrant-SPK](https://github.com/sandstorm-io/vagrant-spk).
+- Clone this repo and from the top-level directory, run:
+ - `vagrant-spk vm up` to start a virtual Linux machine containing Sandstorm
+ - `vagrant-spk dev` to make the app available in the Sandstorm, in development mode
+- Your system is running a Sandstorm instance. You should visit it in your web browser now by opening this link.
+ - http://local.sandstorm.io:6080
+- Log in with a dev account, choose *Alice (admin)* as the user to sign in with
+- Click the *TiddlyWiki App* icon, then *Create new instance* to spin up a new TiddlyWiki instance.
 
 Packaging:
 
 To create a Sandstorm package (SPK) file, containing the app and all its dependencies. 
 
-1. Stop the `vagrant-spk dev` server : type `Ctrl-C`.
-2. To create the SPK file, run: `vagrant-spk pack ~/export-path/package.spk`
+- Stop the `vagrant-spk dev` server : type `Ctrl-C`.
+- To create the SPK file, run: `vagrant-spk pack ~/export-path/package.spk`
 
 You can upload this spk file inside your own Sandtorm server to test it.
 

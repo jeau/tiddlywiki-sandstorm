@@ -10,6 +10,7 @@ export DEBIAN_FRONTEND=noninteractive
 apt-get update
 curl -sL https://deb.nodesource.com/setup_4.x | sudo -E bash -
 apt-get install -y nodejs
+npm install -g npm 
 npm install -g tiddlywiki
 #
 # If the packages you're installing here need some configuration adjustments,
