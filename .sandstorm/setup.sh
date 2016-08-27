@@ -8,7 +8,8 @@ set -euo pipefail
 #
 export DEBIAN_FRONTEND=noninteractive
 apt-get update
-apt-get install -y nodejs-legacy npm 
+curl -sL https://deb.nodesource.com/setup_4.x | sudo -E bash -
+apt-get install -y nodejs
 npm install -g tiddlywiki
 #
 # If the packages you're installing here need some configuration adjustments,
